@@ -1,0 +1,22 @@
+---
+ru:
+  hello: "Привет мир"
+
+  application:
+    name: "ИП Аксёнов Дмитрий Викторович"
+    label: "ИП Аксёнов Д. В."
+    title: "ИП Аксёнов Д. В."
+    suffix: "DAkS"
+
+  date:
+    formats:
+      default: "%-d %b %Y"
+      long: "%-d %B %Y"
+      short: "%d.%m.%Y"
+
+  time:
+    formats:
+      default: "%-d %b %Y, %H:%M"
+      long: "%a, %-d %B %Y, %H:%M" # "%a, %-d %B %Y, %H:%M:%S %z"
+      short: "%d.%m.%Y %H:%M"
+...

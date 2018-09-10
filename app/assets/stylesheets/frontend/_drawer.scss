@@ -1,0 +1,11 @@
+.mdc-drawer__header {
+  padding: .5rem;
+  canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    background: image_url('rails/rails.svg') center no-repeat transparent;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails DAks: development" uuid="12cf4e8a-1aff-4351-b1c0-624f6e41099f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:daks</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails DAks: production" uuid="53fea400-8efd-4766-882a-89b24ca6e157">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:daks</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="daks@94.142.140.20" uuid="0f6eb8dc-1417-48e5-be33-779db658c3d9">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://94.142.140.20:5432/daks</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails DAks: test" uuid="892f52aa-23ba-4dc8-b077-7a0fda886409">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:daks_test</jdbc-url>
+    </data-source>
+  </component>
+</project>

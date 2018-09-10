@@ -1,0 +1,42 @@
+h1 Statics#home KKK ККК
+p Find me in app/views/statics/home.html.slim
+
+img(
+  src=image_path('icon.png')
+  width=192
+  height=192
+  data-lightbox=controller_name
+  data-lightbox-href=image_path('icon.png')
+  )
+link%image(
+  href=image_path('svg/rails.svg')
+  data-lightbox=controller_name
+  )
+link%image(
+  href=image_path('svg/ruby.svg')
+  data-lightbox=controller_name
+  )
+
+.my-ripple
+  button.mdc-button.mdc-ripple-surface> TEXT
+  button.mdc-button.mdc-button--raised.mdc-ripple-surface> RAISED
+
+scss:
+  .preload {
+    display: block;
+    max-width: 100%;
+    background: center no-repeat;
+    background-size: cover;
+  }
+
+br
+
+.mdc-layout-grid
+  .mdc-layout-grid__inner
+    - for n in 1..16
+      .mdc-layout-grid__cell--span-3
+        canvas.preload(
+          width=600
+          height=450
+          data-lazy="https://picsum.photos/600/450?image=#{n * 3}"
+          )

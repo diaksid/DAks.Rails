@@ -1,0 +1,44 @@
+---
+ru:
+  activerecord:
+    models:
+      comment:
+        one: "Комментарий"
+        few: "Комментария"
+        many: "Комментариев"
+        other: "Комментарии"
+    attributes:
+      active_admin/comment:
+        namespace: "Область имён"
+        resource: "Ресурс"
+        resource_type: "Тип ресурса"
+        resource_id: "ID ресурса"
+        author: "Автор"
+        author_type: "Тип автора"
+        author_id: "ID автора"
+        body: "Текст"
+        created_at: "Создано"
+        updated_at: "Изменено"
+
+  formtastic:
+    :yes: 'Да'
+    :no: 'Нет'
+    :create: 'Создать %{model}'
+    :update: 'Изменить %{model}'
+    :submit: 'Выполнить %{model}'
+    :cancel: 'Отменить %{model}'
+    :reset: 'Сбросить %{model}'
+
+  active_admin:
+    all: "Все"
+    scopes:
+      all: "Все"
+      unscoped: "Стандарт"
+    filters:
+      predicates:
+        eq: "равно"
+        from: "от"
+        to: "до"
+    index_list:
+      table_alter: "Детали"
+...

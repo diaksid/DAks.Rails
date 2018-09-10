@@ -1,0 +1,17 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+main {
+  padding: 0 5rem 3rem;
+}
+
+.pro-container {
+  display: inline-flex;
+}

@@ -1,0 +1,37 @@
+- cache do
+  = csrf_meta_tags
+  = csp_meta_tag
+  /= action_cable_meta_tag
+
+  = js_events_script_tag
+
+  link[
+    rel='stylesheet'
+    href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic'
+    data-turbolinks-track='reload'
+    ]
+  /link[
+    rel='stylesheet'
+    href='//fonts.googleapis.com/icon?family=Material+Icons'
+    data-turbolinks-track='reload'
+    ]
+
+  = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+
+  = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  /[if lt IE 9]
+    script[
+      src='/javascripts/html5bility.min.js'
+      data-turbolinks-track='reload'
+      ]
+  /[if lt IE 11]
+    script[
+      src='/javascripts/flexibility.min.js'
+      data-turbolinks-track='reload'
+      ]
+
+  = render 'application/favicon'
+
+  = yandex_metrika_script_tag

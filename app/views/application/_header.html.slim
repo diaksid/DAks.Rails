@@ -1,0 +1,81 @@
+header.mdc-top-app-bar
+  .mdc-top-app-bar__row
+    section.mdc-top-app-bar__section.mdc-top-app-bar__section--align-start
+      span.material-icons.mdc-top-app-bar__navigation-icon menu
+      span.mdc-top-app-bar__title Persistent Drawer
+    section@toolbar.mdc-top-app-bar__section.mdc-top-app-bar__section--align-end
+      a.material-icons.mdc-top-app-bar__action-item.is-active(
+        href='#'
+        aria-label='Mail'
+        alt='Mail'
+        ) mail_outline
+      a.material-icons.mdc-top-app-bar__action-item(
+        href='#'
+        aria-label='Account'
+        alt='Account'
+        ) person_outline
+      a.material-icons.mdc-top-app-bar__action-item(
+        href='#'
+        aria-label='Bookmark this page'
+        alt='Bookmark this page'
+        data-scroll='#home007'
+        ) bookmark_outline
+
+/header.mdc-toolbar.mdc-elevation--z4
+  .mdc-toolbar__row
+    section.mdc-toolbar__section.mdc-toolbar__section--align-start
+      a.material-icons.mdc-toolbar__menu-icon(href='#') menu
+      span.mdc-toolbar__title.catalog-title Persistent Drawer
+
+
+  /#navbarHeader.collapse.bg-dark
+    .container
+      .row
+        .col-sm-8.col-md-7.py-4
+          //h4.text-white About
+          //p.text-muted Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.
+          - if current_user
+            h2 = current_user.to_s
+          - else
+           = render 'sign_in'
+        .col-sm-4.offset-md-1.py-4
+          h4.text-white Contact
+          ul.list-unstyled
+            li: a.text-white(href='#') Follow on Twitter
+            - if current_user
+              - if current_user.in_staff?
+                li: a.text-white(href='/admin') Admin
+              li = link_to t('devise.shared.links.sign_out'), destroy_user_session_path, method: :delete
+            - else
+              li = link_to t('devise.registrations.new.sign_up'), new_registration_path(:user)
+
+  /.navbar.navbar-dark.bg-dark.box-shadow
+    .container.d-flex.justify-content-between
+      a.navbar-brand.d-flex.align-items-center(href=root_path)
+        svg.mr-2(
+          xmlns='http://www.w3.org/2000/svg'
+          width='20'
+          height='20'
+          viewBox='0 0 24 24'
+          fill='none'
+          stroke='currentColor'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          )
+          path(d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z')
+          circle(
+            cx='12'
+            cy='13'
+            r='4'
+            )
+        strong DAks
+      button.navbar-toggler(
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarHeader'
+        aria-controls='navbarHeader'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
+        )
+          span.navbar-toggler-icon
