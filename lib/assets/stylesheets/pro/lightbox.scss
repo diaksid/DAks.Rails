@@ -29,24 +29,6 @@
 }
 
 .lightbox-next,
-.lightbox-prev,
-.lightbox-close {
-  position: absolute;
-  color: #fff;
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 40px;
-  line-height: 40px;
-  text-shadow: 0 0 8px rgba(50, 50, 50, .8);
-  cursor: pointer;
-  transition: all 250ms;
-  &:hover {
-    font-weight: bold;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, .8);
-    opacity: .9;
-  }
-}
-
-.lightbox-next,
 .lightbox-prev {
   top: 0;
   width: calc(50% + 40px);
@@ -76,6 +58,7 @@
 }
 
 .lightbox-close {
+  z-index: 1;
   top: -22px;
   right: -20px;
   width: 40px;
@@ -83,6 +66,25 @@
   opacity: .7;
   &:before {
     content: '✗';
+  }
+}
+
+.lightbox-next,
+.lightbox-prev,
+.lightbox-close {
+  position: absolute;
+  color: #fff;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 40px;
+  line-height: 40px;
+  text-shadow: 0 0 8px rgba(50, 50, 50, .8);
+  cursor: pointer;
+  transition: all 250ms;
+
+  &:hover {
+    font-weight: bold;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, .8);
+    opacity: .9;
   }
 }
 
