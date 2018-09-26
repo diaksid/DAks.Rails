@@ -1,8 +1,14 @@
 ((Pro) => {
 
     Pro.assign({
-        scroll: function (options, callback) {
-            new Pro('[data-scroll]')
+        scroll: function (options = {}, callback) {
+            if (typeof options === 'function') {
+                callback = options;
+                options = {};
+            } else if (typeof options === 'string') {
+                options = {selector: options};
+            }
+            new Pro(options.selector || '[data-scroll]')
                 .deactive()
                 .onclick(function () {
                     let selector = this.dataset.scroll || this.getAttribute('href');
