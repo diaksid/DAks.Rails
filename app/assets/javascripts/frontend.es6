@@ -1,3 +1,5 @@
+var mdc = null;
+
 ((document, mdc, Pro) => {
 
     let turbo = window.Turbolinks !== null;

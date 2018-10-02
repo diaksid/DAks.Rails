@@ -1,8 +1,4 @@
 - cache do
-  = csrf_meta_tags
-  = csp_meta_tag
-  /= action_cable_meta_tag
-
   = js_events_script_tag
 
   link[
@@ -21,12 +17,12 @@
   = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
-  /[if lt IE 9]
+  //[if lt IE 9]
     script[
       src='/javascripts/html5bility.min.js'
       data-turbolinks-track='reload'
       ]
-  /[if lt IE 11]
+  //[if lt IE 11]
     script[
       src='/javascripts/flexibility.min.js'
       data-turbolinks-track='reload'

@@ -1,5 +1,2 @@
-// import '../src/polyfills';
-
-import * as mdc from '../src/mdc-web';
-
-window.mdc = mdc;
+import '../src/mdc-web'
+import '../src/pro'
