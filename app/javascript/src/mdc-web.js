@@ -59,7 +59,7 @@ autoInit.register('MDCList', list.MDCList)
 // autoInit.register('MDCToolbar', toolbar.MDCToolbar)
 autoInit.register('MDCTopAppBar', topAppBar.MDCTopAppBar)
 
-window.mdc = {
+window.MDC = {
   autoInit,
   // base,
   // checkbox,
